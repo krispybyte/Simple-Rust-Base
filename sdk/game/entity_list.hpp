@@ -32,7 +32,7 @@ private:
 		memory.read(list_info.base + 0x20, entities_buffer.get(), list_info.size * sizeof(uintptr_t));
 		
 		/* set address in struct */
-		list_info.address = { entities_buffer.get(), entities_buffer.get() + (uintptr_t)list_info.size};
+		list_info.address = { entities_buffer.get(), entities_buffer.get() + (uintptr_t)list_info.size };
 		
 		return list_info;
 	}
