@@ -13,7 +13,7 @@ namespace o
 	rust_offset Graphics_c = 0x32494C8;
 
 	// camera
-	rust_offset MainCamera_c = 0x3218808;
+	rust_offset MainCamera_c = 0x32187F0;
 
 	// Graphics
 	rust_offset grassshadows = 0x10;
