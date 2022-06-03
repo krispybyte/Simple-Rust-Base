@@ -168,7 +168,7 @@ private:
 public:
 	Vector3 get_entity_bone(uintptr_t player, int bone_index)
 	{
-		uintptr_t player_model = memory.read<uintptr_t>(player + 0x128); // BaseEntity->model
+		uintptr_t player_model = memory.read<uintptr_t>(player + 0x130); // BaseEntity->model
 		uintptr_t bone_transforms = memory.read<uintptr_t>(player_model + 0x48); // Model->boneTransforms
 		uintptr_t entity_bone = memory.read<uintptr_t>(bone_transforms + (0x20 + (bone_index * 0x8)));
 		uintptr_t bone = memory.read<uintptr_t>(entity_bone + 0x10);
