@@ -8,12 +8,12 @@ namespace o
 	rust_offset GameObjectManager = 0x17C1F18;
 
 	// Script.json
-	rust_offset BaseEntity_c = 0x3216C50; // BaseEntity_c
-	rust_offset BaseNetworkable_c = 0x32178A8; // BaseNetworkable_c
+	rust_offset BaseEntity_c = 0x3217C48; // BaseEntity_c
+	rust_offset BaseNetworkable_c = 0x32188A8; // BaseNetworkable_c
 	rust_offset Graphics_c = 0x32494C8;
 
 	// camera
-	rust_offset MainCamera_c = 0x32187F0;
+	rust_offset MainCamera_c = 0x32197F8;
 
 	// Graphics
 	rust_offset grassshadows = 0x10;
@@ -90,9 +90,10 @@ namespace o
 	rust_offset BaseProjectile_createdProjectiles = 0x370;
 
 	// Magazine
-	rust_offset Magazine_capacity = 0x14;
-	rust_offset Magazine_contents = 0x18;
-	rust_offset Magazine_ammoType = 0x1C;
+	rust_offset Magazine_definition = 0x10;
+	rust_offset Magazine_capacity = 0x18;
+	rust_offset Magazine_contents = 0x1C;
+	rust_offset Magazine_ammoType = 0x20;
 
 	// Recoil Properties
 	rust_offset RecoilProperties_recoilYawMin = 0x18;
@@ -103,10 +104,10 @@ namespace o
 	rust_offset RecoilProperties_movementPenalty = 0x34;
 
 	// Item
-	rust_offset Item_info = 0x20; // no "info"
-	rust_offset Item_uid = 0x14;
-	rust_offset Item_amount = 0x20;
-	rust_offset Item_heldEntity = 0x40;
+	rust_offset Item_info = 0x20; 
+	rust_offset Item_uid = 0x28;
+	rust_offset Item_amount = 0x30;
+	rust_offset Item_heldEntity = 0x98;
 
 	// Inventory
 	rust_offset Inventory_containerMain = 0x20;
